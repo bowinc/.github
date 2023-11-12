@@ -1,0 +1,15 @@
+name: Discord app
+on:
+
+   workflow_dispatch:
+
+    jobs:
+         build:
+              runs-on: ubuntu-latest
+
+              steps:
+                   uses: actions/checkout@v3
+
+                   - name: import discord app git
+                     run: git clone https://github.com/discord/discord-example-app.git
+                        
